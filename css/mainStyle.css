@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700italic,400italic,700,300,200) ;
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700italic,400italic,700,300,200) ;
+
+@font-face {
+font-family:"'Source Sans Pro'";
+}
+
+body {
+line-height:1.4;
+width:100%;
+}
+
+#mySeite {
+min-height:100%;
+}
+
+html {
+font-family:sans-serif;
+}
+
+a {
+background-color:transparent;
+margin-right:20px;
+text-decoration:none;
+}
+
+.container {
+max-width:1230px;
+width:62%;
+}
+
+.headerImg {
+height:40%;
+margin:0 auto;
+max-height:420px;
+width:auto;
+}
+
+.myHeader {
+padding:30px 100px 25px;
+}
+
+.navbar {
+background-color:#fff;
+border:none;
+}
+
+h2 {
+color:#00263A;
+font-family:Montserrat, sans-serif;
+font-size:28px;
+font-weight:600;
+margin-top:35px;
+}
+
+.MHguide {
+margin:0 auto;
+padding-top:20px;
+}
+
+.MHGuideImg {
+height:auto;
+width:180px;
+}
+
+.headStripe {
+margin-top:-10px;
+width:100%;
+}
+
+.headerLinks {
+float:right;
+font:12px Montserrat;
+height:auto;
+padding:0 20px 0 0;
+text-align:right;
+width:25%;
+}
+
+.innerDiv {
+background-color:#f1f1ef;
+height:40%;
+margin-top:4px;
+max-height:420px;
+padding:18px 75px 40px;
+text-align:left;
+width:100%;
+}
+
+#impressum {
+background-color:#002639;
+bottom:0;
+height:2.8em;
+padding:10px 0;
+position:fixed;
+width:100%;
+}
+
+.impressumText {
+margin:0 auto;
+max-width:1230px;
+text-align:right;
+text-transform:uppercase;
+width:62%;
+}
+
+.impressumText a {
+color:#FFF;
+font-family:'Source Sans Pro', sans-serif;
+font-size:16px;
+}
+
+p {
+color:#717372;
+font-family:'Source Sans Pro', sans-serif;
+font-size:20px;
+}
+
+.flags {
+margin:0 auto;
+padding-top:35px;
+width:25%;
+}
+
+.usa_flag {
+float:left;
+width:50px;
+}
+
+.eu_flag {
+float:right;
+width:50px;
+}
+
+.clearDiv {
+clear:both;
+}
+
+a:hover,a:active {
+color:#253746;
+}
