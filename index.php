@@ -193,7 +193,7 @@ if( !$title ) { $title = clean_title(basename(dirname(__FILE__))); }*/
                         echo '<p id="left"><i class="material-icons">&#xe2c8;</i>'.$name.' '.$version.' <p>';
                         echo '<p id="middle">'.$date.' <p>';
                         //echo '<div style="display: none" id="name'.$item.'">'.$item.'</div> ';
-                        echo '<p><button onclick="condition(\''.$item.'\')" class="btn" id="button"><i class="fa fa-download"></i>Download</button></p>';
+                        echo '<p><button onclick="condition(\''.$item.'\', \''.$data->name.'\')" class="btn" id="button"><i class="fa fa-download"></i>Download</button></p>';
                         echo '</div>';
 
                         echo '<div id="termsandconditions">';
@@ -202,7 +202,7 @@ if( !$title ) { $title = clean_title(basename(dirname(__FILE__))); }*/
                         echo '<div id="tit"><h1>Terms and Conditions <span class="close">&times;</span></h1></div>';
                         echo '<p>Service The MH Adapter bundle contains several adapters to transform output files from the respective pipelines into single Molecular Health (MH) Guide/MH Guide Mendel/MH Guide BRCA VCF files. Consult the current version of the MH VCF Quick Guide for details about the MH VCF format. The MH VCF file is intended for transfer to MH Guide using the MH Order portal or the MH SFTP process, or a process that combines both MH Order portal and SFTP.</p>';
                         echo '<div id="accept">
-                              <a id="object" download><button class="btn" id="cancel1" >Accept and Download</button></a>
+                              <a id="object" ><button class="btn" id="cancel1" >Accept and Download</button></a>
                               <button class="btn" id="cancel">Cancel</button>
                               </div>';
                         echo '</div>';
@@ -265,11 +265,12 @@ if( !$title ) { $title = clean_title(basename(dirname(__FILE__))); }*/
     <script type="text/javascript">
         //Popup terms and conditions script
         const x = document.getElementById("termsandconditions");
-        function condition(item)
+        function condition(item, name)
         {
             x.style.display = "block";
             var obj = document.getElementById("object");
             obj.href = "./files/" + item;
+            obj.download = name;
         }
         const close = document.getElementsByClassName("close")[0];
         close.onclick = function () {
