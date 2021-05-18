@@ -156,8 +156,7 @@ if( !$title ) { $title = clean_title(basename(dirname(__FILE__))); }*/
         <!-- ======= Heading Content ======= -->
         <section id="head_content" class="head_content">
             <div class="container" style="margin-top: 80px">
-                <div class="content" >
-                    <!--<img src="/icons/Fisch picture for AdapterStore webpage.jpg" style="visibility: hidden;" />-->
+                <div class="content" style=" background: url('icons/FischpictureforAdapterStorewebpage.jpg') no-repeat center; background-size: cover ">
                     <div class="text-center">
                         <h1><span>MH Guide Adapter Download</span></h1>
                     </div>
