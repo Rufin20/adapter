@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/*#preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-#topbar {
+/*#topbar {
   background: #fff;
   height: 40px;
   font-size: 14px;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 .headStripe {
   margin-top:-10px;
   width:100%;
-  }
+  }*/
 
 /*--------------------------------------------------------------
 # Header
@@ -452,9 +452,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
+/*!*--------------------------------------------------------------
 # Hero Section
---------------------------------------------------------------*/
+--------------------------------------------------------------*!
 #hero {
   width: 100%;
   height: 90vh;
@@ -531,11 +531,11 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     height: auto;
   }
-}
+}*/
 
-/*--------------------------------------------------------------
+/*!*--------------------------------------------------------------
 # Sections General
---------------------------------------------------------------*/
+--------------------------------------------------------------*!
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -583,137 +583,222 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #f1f7fd;
-  min-height: 40px;
-  margin-top: 120px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 63px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
-# Teaser
---------------------------------------------------------------*/
-.teaser .content {
-  padding: 10px 10px 10px 10px;
-  background: rgb(0,60,113);
-  background: linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(0,119,139,1) 30%, rgba(35,164,85,1) 60%, rgba(151,215,0,1) 100%);
-  border-radius: 4px;
-  color: #fff;
+}*/
+/******************/
+/* Begin new CSS*/
+/*****************/
+.head_content .content{
+  background: url("../icons/Fisch picture for AdapterStore webpage.jpg") no-repeat center;
+  background-size: cover;
   margin: auto;
-}
-
-.teaser .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
-.teaser .content p {
-  margin-bottom: 20px;
-}
-
-.teaser .content .more-btn {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 6px 30px 8px 30px;
+  height: 550px;
+  padding: 35px;
   color: #fff;
-  border-radius: 50px;
-  transition: all ease-in-out 0.4s;
+  opacity: 100%;
 }
-
-.teaser .content .more-btn i {
-  font-size: 14px;
-}
-
-.teaser .content .more-btn:hover {
-  color: #1977cc;
-  background: #fff;
-}
-
-.teaser .icon-boxes .icon-box {
-  text-align: center;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  width: 100%;
-}
-
-.teaser .icon-boxes .icon-box i {
-  font-size: 40px;
-  color: #1977cc;
+.head_content .content h1 {
+  font-weight: 600;
+  font-size: 70px;
   margin-bottom: 30px;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.teaser .icon-boxes .icon-box h4 {
+.head_content .content h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  text-align: left;
+  font-weight: 400;
+}
+
+/*Date information bar*/
+.head_content #information {
+  background-color: lightgray;
+  height:80px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  align-items: center;
+  padding-top: 10px;
+
+}
+/**name*/
+.head_content #information  p{
+  display: flex;
+  font-weight: bold;
+  font-size: 25px;
+  align-items: center;
+  /*white-space: nowrap;*/
+  /*background-color: #1c84e3;*/
+}
+
+.head_content #information p i{
+  font-size: 40px;
+  color: ghostwhite;
+  background-color: #2DC17D;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.head_content #information #p1{
+  flex: 50%;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+.head_content #information #p2{
+  flex: 25%;
+  justify-content: center;
+}
+.head_content #information #p3{
+  flex: 25%;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+/***download section*/
+#download {
+  background-color: #F1F1F1;
+  height:80px;
+  display: flex;
+  /*justify-content: space-between;*/
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
+  color: #757575;
+  font-family: "Lato", sans-serif;
+
+  /*font-weight: bold;*/
   font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 30px 0;
+}
+#download  p{
+  display: flex;
+  align-items: center;
+  /*white-space: nowrap;*/
+  /*background-color: #1c84e3;*/
+}
+#download .btn {
+  flex: 25%;
+  justify-content: flex-end;
+  margin-right: 30px;
+  background-color: #04AA6D;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#download .btn:hover {
+  background-color: #1c7430;
+}
+#download .btn i {
+  margin-right: 10px;
+}
+#middle {
+
+  flex: 25%;
+  justify-content: flex-start;
+  margin-left: 30px;
 }
 
-.teaser .icon-boxes .icon-box p {
-  font-size: 15px;
-  color: #848484;
+#left {
+
+  flex: 50%;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: flex-start;
+
+  /*background-color: #1d1c1c;*/
 }
+
+#left i {
+  margin-right: 10px;
+  font-size: 40px;
+  color: #757575;
+}
+
+
+/***terms and conditions*****/
+#termsandconditions {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.conditions {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.conditions .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.conditions .close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.conditions #tit {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  background-color: #F1F1F1;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.01%;
+
+}
+.conditions p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+
+}
+.conditions #accept {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.conditions .btn {
+  float: right;
+  margin-right: 30px;
+  background-color: #04AA6D;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.conditions .btn:hover {
+  background-color: #1c7430;
+}
+
+/*****************End new CSS***********************/
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+/*
 .services .icon-box {
   text-align: center;
   border: 1px solid #d5e1ed;
@@ -789,11 +874,13 @@ section {
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
 }
+*/
 
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+/*
 .contact .info {
   width: 100%;
   background: #fff;
@@ -940,6 +1027,7 @@ section {
     transform: rotate(360deg);
   }
 }
+*/
 
 /*--------------------------------------------------------------
 # Footer
@@ -949,10 +1037,13 @@ section {
 #footer {
   color: #002639;
   font-size: 14px;
-  background: #f1f7fd;
+  overflow: hidden;
+  /*background: #f1f7fd;*/
+  margin-top: 15px;
+  background: linear-gradient(90deg, rgba(0,38,59,1) 0%, rgba(1,42,67,1) 10%, rgba(0,47,82,1) 20%, rgba(0,59,110,1) 100%);
 }
 
-#footer .footer-top {
+/*#footer .footer-top {
   padding: 60px 0 30px 0;
   background: rgb(0,124,186);
   background: linear-gradient(90deg, rgba(0,38,59,1) 0%, rgba(1,42,67,1) 10%, rgba(0,47,82,1) 20%, rgba(0,59,110,1) 100%);
@@ -961,27 +1052,28 @@ section {
 
 #footer .footer-top .footer-copyright {
   background: rgb(0,38,38);
-  background-color: #002639;
+  !*background-color: #002639;*!
   width : 75%;
   font-size: 18px;
   display: inline-block;
   color: #fff;
   padding: 10px 10px 10px 10px;
   transition: 0.3s;
-}
+}*/
 
-#footer .footer-top .footer-contact {
+/*#footer .footer-top .footer-contact {
   margin-bottom: 30px;
-}
-
+}*/
+/*
 #footer .footer-top .footer-contact h4 {
   font-size: 22px;
   margin: 0 0 30px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
-}
+}*/
 
+/*
 #footer .footer-top .footer-contact p {
   font-size: 14px;
   line-height: 24px;
@@ -989,7 +1081,9 @@ section {
   font-family: "Raleway", sans-serif;
   color: #777777;
 }
+*/
 
+/*
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
@@ -997,6 +1091,7 @@ section {
   position: relative;
   padding-bottom: 12px;
 }
+*/
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
@@ -1041,15 +1136,15 @@ section {
   font-size: 15px;
 }
 
-#footer .footer-newsletter h4 {
+/*#footer .footer-newsletter h4 {
   font-size: 16px;
   font-weight: bold;
   color: #444444;
   position: relative;
   padding-bottom: 12px;
-}
+}*/
 
-#footer .footer-newsletter form {
+/*#footer .footer-newsletter form {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
@@ -1057,9 +1152,9 @@ section {
   border-radius: 50px;
   text-align: left;
   border: 1px solid #bfdcf7;
-}
+}*/
 
-#footer .footer-newsletter form input[type="email"] {
+/*#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
@@ -1083,11 +1178,12 @@ section {
 #footer .footer-newsletter form input[type="submit"]:hover {
   background: #1c84e3;
 }
-
+*/
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
   color: #444444;
+  margin-left: 30px;
 }
 
 #footer .social-links a {
