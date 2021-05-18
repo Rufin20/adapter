@@ -588,7 +588,8 @@ section {
 /* Begin new CSS*/
 /*****************/
 .head_content .content{
-  background: url(../icons/FischpictureforAdapterStorewebpage.jpg) no-repeat center;
+  /*background: url(../icons/FischpictureforAdapterStorewebpage.jpg) no-repeat center;*/
+  background: url("https://www.molecularhealth.com/wp-content/uploads/2021/03/MH_Header_Nutzungsbedingungen.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   height: 550px;
